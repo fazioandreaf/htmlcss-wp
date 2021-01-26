@@ -10,7 +10,7 @@
 header,.jumbo,.row,footer {
   width: 80vw;
   margin: auto;
-  margin-top: 20px;
+  margin-top: 25px;
 }
 header img, .line {
   max-width: calc(80px + 6vw);
@@ -46,7 +46,7 @@ header a:hover {
 .jumbo {
   position: relative;
   background-image: url(../img/banner.jpg);
-  height: 75vh;
+  height: 78vh;
 }
 .layover {
   height: 100%;
@@ -86,10 +86,10 @@ header a:hover {
 }
 .img-row {
   height: 200px;
+  margin-bottom: 20px;
 }
 .img-central{
   background-image: url(../img/banner-2.jpg);
-  margin-bottom: 10px;
 }
 .img-aside-left {
   background-image: url(../img/img-1.jpg);
