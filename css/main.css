@@ -14,12 +14,8 @@ header,.jumbo,.row,footer {
 }
 header img, .line {
   max-width: calc(80px + 6vw);
-}
-.line {
-  width: 10px;
-  display: inline-block;
+  padding-right: 10px;
   border-right: 2px solid black;
-  min-height: calc(40px + 2vw);
 }
 header ul {
   list-style-type: none; /* rimuovo le decorazioni */
