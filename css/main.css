@@ -19,7 +19,6 @@ header img {
   border-right:  1px solid black;
   width: 200px;
 }
-
 header ul {
   list-style-type: none; /* rimuovo le decorazioni */
   margin: 10px 0px;
@@ -40,6 +39,12 @@ header a {
   height: 500px;
   background-size: cover;
   background-position: center;
+}
+.layover {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+.jumbo *, .jumbo, .float-row1 .layover {
   border-radius: 20px;
 }
 .jumbo .text-on-jumbo {
@@ -51,17 +56,27 @@ header a {
 .text-on-jumbo h4 {
   font-size: 20px;
 }
-.layover{
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.15);
-}
-.intestazione {
-  background-color: lightblue;
-  margin-top: 4vh;
-}
 .intestazione h5, .float-row1 span {
   color: lightgrey;
 }
+.img{
+  height: 200px;
+  background-image: url(../img/banner-2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.img-aside-left {
+  background-image: url(../img/img-1.jpg);
+  background-size: contain;
+
+}
+.img-aside-right {
+  background-image: url(../img/img-3.jpg);
+  background-size: contain;
+
+}
+
 .row::after {
   content: "";
   display: table;
@@ -70,7 +85,6 @@ header a {
 .float-row1 {
   border-radius: 20px;
   float: left;
-  background-color:lightblue;
   margin-top: 3%;
 }
 .aside {
