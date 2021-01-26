@@ -1,4 +1,5 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 * {
   margin: 0px;
   padding: 0px;
@@ -7,24 +8,24 @@
 }
 /* \Regole header */
 header,.jumbo,.row,footer {
-  position: relative;
   width: 80vw;
   margin: auto;
   margin-top: 20px;
 }
-header {
-  min-height: calc(20px + 3vh);
+header img, .line {
+  max-width: calc(80px + 6vw);
 }
-header img {
-  border-right:  1px solid black;
-  width: 200px;
+.line {
+  width: 10px;
+  display: inline-block;
+  border-right: 2px solid black;
+  min-height: calc(40px + 2vw);
 }
 header ul {
   list-style-type: none; /* rimuovo le decorazioni */
   margin: 10px 0px;
 }
 header li {
-  color: lightgrey;
   display: inline-block;
 }
 header a {
@@ -33,57 +34,43 @@ header a {
   color: lightgrey;
   text-transform: uppercase;
 }
+header a:hover {
+  color: black;
+}
+/* regole jumbodrill */
+.img {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 .jumbo {
   position: relative;
   background-image: url(../img/banner.jpg);
-  height: 500px;
-  background-size: cover;
-  background-position: center;
+  height: 75vh;
 }
 .layover {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.15);
 }
-.jumbo *, .jumbo, .float-row1 .layover {
+.jumbo *, .jumbo, .float-row .layover {
   border-radius: 20px;
 }
-.jumbo .text-on-jumbo {
+.text-on-jumbo {
   position: absolute;
   margin: 20px;
-  top: 70%;
+  bottom: 0%;
   color: white;
 }
 .text-on-jumbo h4 {
   font-size: 20px;
 }
-.intestazione h5, .float-row1 span {
-  color: lightgrey;
-}
-.img{
-  height: 200px;
-  background-image: url(../img/banner-2.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.img-aside-left {
-  background-image: url(../img/img-1.jpg);
-  background-size: contain;
-
-}
-.img-aside-right {
-  background-image: url(../img/img-3.jpg);
-  background-size: contain;
-
-}
-
+/* regole per la row */
 .row::after {
   content: "";
   display: table;
   clear: both;
 }
-.float-row1 {
-  border-radius: 20px;
+.float-row {
   float: left;
   margin-top: 3%;
 }
@@ -94,8 +81,25 @@ header a {
   margin: 3% 3%;
   width: 40%;
 }
+.intestazione h5, .float-row span {
+  color: lightgrey;
+}
+.img-row {
+  height: 200px;
+}
+.img-central{
+  background-image: url(../img/banner-2.jpg);
+  margin-bottom: 10px;
+}
+.img-aside-left {
+  background-image: url(../img/img-1.jpg);
+  background-size: contain;
+}
+.img-aside-right {
+  background-image: url(../img/img-3.jpg);
+  background-size: contain;
+}
 footer {
-  background-color: purple;
   height: 50px;
   text-align: center;
 }
